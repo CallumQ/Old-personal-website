@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="#1c1c1c" name="theme-color" />
+    <meta content="#1c1c1c" name="msapplication-navbutton-color" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="Image/favicon.ico" rel="shortcut icon" />
+    <link href="Image/favicon.ico" rel="icon" sizes="16x16 32x32 64x64" />
+    <link href="Image/favicon-192.png" rel="icon" sizes="196x196" type="image/png" />
+    <link href="Image/favicon-160.png" rel="icon" sizes="160x160" type="image/png" />
+    <link href="Image/favicon-96.png" rel="icon" sizes="96x96" type="image/png" />
+    <link href="Image/favicon-64.png" rel="icon" sizes="64x64" type="image/png" />
+    <link href="Image/favicon-32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="Image/favicon-16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="Image/favicon-57.png" rel="apple-touch-icon" />
+    <link href="Image/favicon-114.png" rel="apple-touch-icon" sizes="114x114" />
+    <link href="Image/favicon-72.png" rel="apple-touch-icon" sizes="72x72" />
+    <link href="Image/favicon-144.png" rel="apple-touch-icon" sizes="144x144" />
+    <link href="Image/favicon-60.png" rel="apple-touch-icon" sizes="60x60" />
+    <link href="Image/favicon-120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="Image/favicon-76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="Image/favicon-152.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="Image/favicon-180.png" rel="apple-touch-icon" sizes="180x180" />
+    <meta content="#1c1c1c" name="msapplication-TileColor" />
+    <meta content="Image/favicon-144.png" name="msapplication-TileImage" />
+    <meta content="/browserconfig.xml" name="msapplication-config" />
+    
+    <meta content="My name is Callum Quigley and I am a software developer who operates in central Scotland. I offer solutions for websites, mobile devices, and desktop enviroments." name="”description”" />
+    <title>Callum Quigley - Software Engineer</title>
+    <style type="text/css">
+        ::after,
+        ::before {
+            box-sizing: inherit;
+        }
+        
+        html {
+            font-family: sans-serif;
+            font-size: 100%;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+            color: rgb(10, 10, 10);
+            -webkit-font-smoothing: antialiased;
+            background: rgb(254, 254, 254);
+            text-align: center;
+        }
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+            display: block;
+        }
+        
+        blockquote,
+        dd,
+        div,
+        dl,
+        dt,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        li,
+        ol,
+        p,
+        pre,
+        td,
+        th,
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .nav-bar {
+            padding-top: 20px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            z-index: 10;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.14902);
+            background: rgba(28, 28, 28, 0.8);
+        }
+        
+        img {
+            border: 0px;
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .header-logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 1s;
+            -webkit-filter: opacity(0.2);
+        }
+        
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            color: inherit;
+            font-style: inherit;
+            font-variant: inherit;
+            font-weight: inherit;
+            font-stretch: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            font-family: inherit;
+            margin: 0px;
+        }
+        
+        button {
+            overflow: visible;
+            -webkit-appearance: none;
+            padding: 0px;
+            border: 0px;
+            border-radius: 3px;
+            line-height: 1;
+            background: transparent;
+        }
+        
+        button,
+        select {
+            text-transform: none;
+        }
+        
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"] {
+            -webkit-appearance: button;
+            cursor: pointer;
+        }
+        
+        [type="button"],
+        [type="submit"] {
+            border-radius: 3px;
+            -webkit-appearance: none;
+        }
+        
+        .show-for-small-only {
+            display: none;
+        }
+        
+        .menu-icon {
+            position: fixed;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            width: 20px;
+            height: 16px;
+            left: 10vw;
+            top: 9vw;
+        }
+        
+        .menu-centered {
+            text-align: center;
+        }
+        
+        dl,
+        ol,
+        ul {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            list-style-position: outside;
+        }
+        
+        ul {
+            list-style-type: disc;
+        }
+        
+        ol,
+        ul {
+            margin-left: 1.25rem;
+        }
+        
+        .menu {
+            margin: 0px;
+            list-style-type: none;
+            font-size: 1.3em;
+        }
+        
+        .menu-centered > .menu {
+            display: inline-block;
+        }
+        
+        li {
+            font-size: inherit;
+        }
+        
+        .menu > li {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
+        a {
+            background-color: transparent;
+            color: rgb(43, 166, 203);
+            text-decoration: none;
+            line-height: inherit;
+            cursor: pointer;
+        }
+        
+        .menu a,
+        .menu button,
+        .menu input {
+            margin-bottom: 0px;
+        }
+        
+        .nav-bar a {
+            font-family: Raleway, sans-serif;
+            font-weight: 300;
+            color: rgb(153, 153, 153);
+            font-size: 1em;
+            transition: color 0.6s;
+        }
+        
+        .menu > li > a {
+            display: block;
+            padding: 0.7rem 1rem;
+            line-height: 1;
+        }
+        
+        .activated {
+            color: white !important;
+        }
+        
+        .menu-middle-item {
+            padding-left: 21px;
+            font-size: 1.3em;
+        }
+        
+        em,
+        i {
+            font-style: italic;
+            font-size: 10em;
+        }
+        
+        b,
+        em,
+        i,
+        strong {
+            line-height: inherit;
+        }
+        
+        .menu > li > a i,
+        .menu > li > a i + span,
+        .menu > li > a img,
+        .menu > li > a img + span,
+        .menu > li > a svg,
+        .menu > li > a svg + span {
+            vertical-align: middle;
+        }
+        
+        .menu > li > a i,
+        .menu > li > a img,
+        .menu > li > a svg {
+            margin-right: 0.25rem;
+            display: inline-block;
+        }
+        
+        .menu > li > a img,
+        .menu > li > a i {
+            margin-right: 0px !important;
+        }
+        
+        .main-image-container {
+            transform: scale(1);
+            overflow: hidden;
+            -webkit-filter: grayscale(90%);
+            padding-top: 300px;
+            padding-bottom: 20px;
+            background-image: url("../Image/edinburghlong.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        
+        .intro-section,
+        .project-section {
+            background-color: rgb(237, 238, 239);
+        }
+        
+        .intro-section,
+        .offer-section,
+        .project-section,
+        .contact-section {
+            position: relative;
+            padding: 96px 10%;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.0980392);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin: 0.67em 0px;
+            padding: 10px 32px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: inherit;
+            text-rendering: optimizeLegibility;
+            margin-top: 0px;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+        
+        .offer-header,
+        .offer-header-smaller,
+        .section-header,
+        .section-header-inverted {
+            font-family: Raleway, sans-serif;
+        }
+        
+        .section-header {
+            padding: 0px;
+            font-size: 2em;
+            display: inline-block;
+            border-bottom: 2px solid rgb(96, 175, 254);
+        }
+        
+        p {
+            font-size: inherit;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            text-rendering: optimizeLegibility;
+            padding: 10px 32px;
+        }
+        
+        .intro-section-content {
+            font-size: 1.3em;
+        }
+        
+        .offer-text,
+        .intro-section-content,
+        .overlay-body {
+            font-family: "Roboto Slab", serif;
+            color: rgb(107, 107, 107);
+        }
+        
+        .button-class {
+            margin-top: 32px;
+            margin-bottom: 32px;
+            font-family: Poppins, sans-serif;
+            font-size: 1.1em;
+            display: inline-block;
+            padding: 15px 30px;
+            color: rgb(53, 52, 57);
+            border: 2px solid rgb(53, 52, 57);
+            transition: all 0.3s ease-out;
+        }
+        
+        .intro-text {
+            color: black;
+        }
+        .contact-section {
+    background-color: #353439;
+}
+
+.contact-section,.offer-section {
+    text-align: center;
+    position: relative;
+    padding: 96px 10%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    z-index: 100;
+}
+.section-header-inverted {
+    padding: 0px;
+    font-size: 2em;
+    color: #edeeef;
+        font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+.button-class-inverted {
+    margin-top: 32px;
+    font-family: 'Poppins', sans-serif;
+   
+    color: #edeeef;
+    border: 2px solid #edeeef;
+    transition: all 0.3s ease-out;
+}
+ 
+.button-class-inverted:hover,.button-class-inverted:focus {
+  
+    
+}
+
+.contact-section-outer{
+  
+    position: relative;
+     text-align: center;
+    
+}
+.button-outer-inverted{
+    position: relative;
+    margin-top: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    display: inline-block;
+
+    color: #edeeef;
+   
+    transition: all 0.2s ease-out;
+    z-index: 10;
+    background: transparent;
+    overflow: hidden;
+    
+}
+.button-outer-inverted:hover{
+
+    
+}
+.button-inner-inverted{
+
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    z-index: -9;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+
+    border-radius: 50%;
+      transition: all 0.2s ease-out;
+}
+.button-link-inverted:hover .button-inner-inverted{
+    height: 200px;
+        width: 200px;
+    transition: all 0.2s linear;
+      background: #edeeef;
+  
+}
+.button-link-inverted:hover .button-inner-text-inverted{
+      color: #353439;
+     transition: all 0.2s linear;
+}.button-inner-text-inverted{
+    margin: 0;
+     border: 2px solid #edeeef;
+     font-size: 1.1em;
+
+    padding: 15px 30px;
+}
+
+.section-header-inverted {
+    padding: 0px;
+    font-size: 2em;
+    color: #edeeef;
+        font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+.button-class-inverted {
+    margin-top: 32px;
+    font-family: 'Poppins', sans-serif;
+   
+    color: #edeeef;
+    border: 2px solid #edeeef;
+    transition: all 0.3s ease-out;
+}
+ 
+.contact-section-outer{
+  
+    position: relative;
+     text-align: center;
+    
+}
+.button-outer{
+    position: relative;
+    margin-top: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    display: inline-block;
+
+    color: #353439;
+   
+    transition: all 0.2s ease-out;
+    z-index: 10;
+    background: transparent;
+    overflow: hidden;
+    
+}
+.button-outer:hover{
+
+    
+}
+.button-inner{
+
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    z-index: -9;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+
+    border-radius: 50%;
+      transition: all 0.2s ease-out;
+}
+.button-link:hover .button-inner{
+    height: 200px;
+        width: 120%;
+    transition: all 0.2s linear;
+      background: #353439;
+  
+}
+.button-link:hover .button-inner-text{
+      color: #edeeef;
+     transition: all 0.2s linear;
+}.button-inner-text{
+    margin: 0;
+     border: 2px solid #353439;
+     font-size: 1.1em;
+
+    padding: 15px 30px;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar"> <img src="Image/CQtester.png" class="header-logo" alt="header logo" id="header-logo" width="100">
+            <button class="menu-icon show-for-small-only" onclick="ToggleMenu()" type="button"> </button>
+            <div class="menu-centered" id="menu-centered">
+                <ul class="menu" id="menu">
+                    <li class="show-for-small-only"><a href="index.html" class="activated">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li class="menu-middle-item show-for-medium 
+                               "><a href="index.html" class="activated"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main-image-container" style="background-image: url(../Image/edinburghlong1.jpg)"></div>
+    <div class="content-outer">
+        <div class="content-inner">
+            <div class="intro-section">
+                <h1 class="section-header">Hi there. My name&#39;s Callum Quigley</h1>
+                <p class="intro-section-content intro-text">I am a freelance developer based in Falkirk who offers software &amp; web development services. I enjoy working with local businesses while also being available to travel further afield. Whether you are looking to get yourself out there for the first time, or making changes to already pre-existing software, why not get in touch to see what I can offer you.</p>
+                 <a href="contact.html" class="button-link">
+                <div class="button-outer">
+                    <div class="button-inner"></div>
+                <p class="button-inner-text">Get in touch</p>
+    
+    </div></a>
+            </div>
+            <div class="offer-section">
+                <p class="section-header">What I offer</p>
+                <div class="row offer-section-outer" data-equalize-on="medium" data-equalizer="">
+                    <div class="small-12 large-4 columns offer-seperator" data-equalizer-watch="">
+                        <p class="offer-header">Bespoke software solutions</p> <i class="icon-code"></i>
+                        <p class="offer-text">I use the most up to date software and frameworks in my development. All of the code I supply is designed to recognized industry standards to ensure maximum readability and usability.</p>
+                    </div>
+                    <div class="small-12 large-4 columns offer-seperator" data-equalizer-watch="">
+                        <p class="offer-header">Comprehensive documentation</p> <i class="icon-doc-text-inv"></i>
+                        <p class="offer-text">The best applications require no guides, but sometimes its unavoidable. The documentation I provide is extremely detailed and easy to follow to ensure you&#39;re never stuck with your new software.</p>
+                    </div>
+                    <div class="small-12 large-4 columns offer-seperator end-col" data-equalizer-watch="">
+                        <p class="offer-header">Straightforward communication</p> <i class="icon-chat"></i>
+                        <p class="offer-text">Computing is filled with jargon which can be a bit confusing to people out with the business. I break down all the jargon into simple English so that we can both focus on delivering the best end product.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 large-4 small-centered ">
+                        <a href="cv.html" class="button-link">
+                <div class="button-outer">
+                    <div class="button-inner"></div>
+                <p class="button-inner-text">Have a look at my CV</p>
+    
+    </div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <p class="section-header">Check out some of my previous work</p>
+                <div class="row">
+                    <div class="small-12 medium-12 large-4 columns">
+                        <div class="image-wrapper"><img alt="Placeholder" class="image-icon" src="http://placehold.it/300x300" />
+                            <div class="overlay">
+                                <div class="overlay-header">
+                                    <p>Project Title</p>
+                                </div>
+                                <div class="overlay-body">This is where a small description will go</div>
+                                <div class="overlay-button-container"><a class="overlay-button" href="portfolio.html">More info</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-12  medium-12 large-4 columns">
+                        <div class="image-wrapper"><img alt="Placeholder" class="image-icon" src="http://placehold.it/300x300" />
+                            <div class="overlay">
+                                <div class="overlay-header">
+                                    <p>Project Title</p>
+                                </div>
+                                <div class="overlay-body">This is where a small description will go</div>
+                                <div class="overlay-button-container"><a class="overlay-button" href="portfolio.html">More info</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-12 large-4 columns">
+                        <div class="image-wrapper"><img alt="Placeholder" class="image-icon" src="http://placehold.it/300x300" />
+                            <div class="overlay">
+                                <div class="overlay-header">
+                                    <p>Project Title</p>
+                                </div>
+                                <div class="overlay-body">This is where a small description will go</div>
+                                <div class="overlay-button-container"><a class="overlay-button" href="portfolio.html">More info</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="button-link">
+                <div class="button-outer">
+                    <div class="button-inner"></div>
+                <p class="button-inner-text">More Projects</p>
+    
+    </div></a>
+            </div>
+            <div class="contact-section">
+                 <div class="section-header-inverted-container">
+        <p class="section-header-inverted">Think we could work together ?</p>
+    </div>
+                <a href="contact.html" class="button-link-inverted">
+                <div class="button-outer-inverted">
+                    <div class="button-inner-inverted"></div>
+                <p class="button-inner-text-inverted">Get in touch</p>
+    
+    </div></a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer class="footer">
+        <div class="row">
+            <div class="small-12 columns">
+                <img src="Image/CQtester.png" alt="Alternative Logo" class="footerlogo" width="100">
+                <div>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <p class="slogan">To do something well is so worthwhile that to die trying to do it better cannot be foolhardy. It would be a waste of life to do nothing with one's ability, for I feel that life is measured in achievement, not in years alone. - <span class="coloured-name">Bruce McLaren</span></p>
+                <p class="copyright"> Copyright © Callum Quigley 2016 - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="Javascript/vendor/foundation.min.js"></script>
+    <link rel="stylesheet" href="css/devicon.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Raleway:300,400|Roboto+Slab" rel="stylesheet">
+    <script>
+        var toggled = 0;
+
+        function ToggleMenu() {
+            if (toggled == 0) {
+                document.getElementById("menu-centered").style.left = "0px";
+                toggled = 1;
+            }
+            else {
+                document.getElementById("menu-centered").style.left = "-800px";
+                toggled = 0;
+            }
+        }
+        $(function () { // DOM ready
+            window.addEventListener('scroll', function (e) {
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop
+                    , shrinkOn = 150;
+                if ($(window).width() < 1024 & $(window).width() > 640) {
+                    if (distanceY > shrinkOn) {
+                        document.getElementById("header-logo").width = "0";
+                    }
+                    else {
+                        document.getElementById("header-logo").width = "100";
+                    }
+                }
+                else {
+                    document.getElementById("header-logo").width = "100";
+                }
+            });
+        });
+    </script>
+    
+    
+    
+</body>
+
+</html>
